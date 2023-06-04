@@ -1,0 +1,160 @@
+body {
+    background-image: url(../img/Fon.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    /* background-attachment: fixed; */
+    background-size: cover;
+    
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-color: #7B4253;
+    border-radius: 0 0 10px 10px;
+    height: 80px;
+    width: 100%;
+}
+
+.wrap-logo {
+    display: flex;
+    align-items: center;
+    height: 80px;
+    padding-left: 20px;
+}
+
+header a.logo {
+    font-size: 25px;
+    font-weight: bold;
+    text-decoration: none;
+    color: aliceblue;
+}
+
+
+header a.LoginButton {
+    background-color: #48160F;
+    border-radius: 10px 0 10px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+    width: 160px;
+    font-size: 20px;
+    text-decoration: none;
+    color: aliceblue;
+
+}
+
+.home{
+    margin: 10% 20% 0 10%;
+}
+
+.home__title {
+    font-weight: 700;
+    font-size: 82px;
+    font-weight: bold;
+    color:#0b0c0ed0;
+
+    margin-bottom: 3%;
+}
+
+.home__subtitle {
+    font-size: 20px;
+    line-height: 30px;
+    color: #0b0c0ed0;
+
+    margin-bottom: 10%;
+}
+
+.home__startButton{
+    width: 200px;
+    height: 60px;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #D5B2CA;
+    border-radius: 10px;
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.home__mockup{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20%;
+}
+
+.home__mockup img {
+    width: 100%;
+}
+
+.footer__nav{
+    margin-left: 10%;
+    margin-bottom: 10%;
+}
+
+.footer__nav-text{
+    font-size: 32px;
+    font-weight: bold;
+    text-decoration: none;
+    color: aliceblue;
+}
+
+@media screen and (max-width: 600px) {
+    header {
+        height: 60px;
+    }
+
+    .wrap-logo {
+        height: 60px;
+    }
+
+    header a.LoginButton {
+        font-size: 15px;
+        height: 60px;
+        width: 80px;
+    }
+
+    .home{
+        margin: 15% 10% 0 10%;
+    }
+
+    .home__title{
+        font-size: 42px;
+        margin-bottom: 15%;
+    }
+
+    .home__subtitle{
+        font-size: 14px;
+        line-height: 20px;
+        margin-bottom: 15%;
+    }
+
+    .home__startButton{
+        width: 120px;
+        height: 40px;
+        margin-left: 30%;
+        font-size: 15px;
+    }
+
+    .home__mockup{
+        margin-bottom: 1%;
+    }
+
+    .footer__nav-text{
+        font-size: 18px;
+    }
+
+    .footer__nav{
+        font-size: 18px;
+    
+        margin-left: 10%;
+        margin-bottom: 10%;
+    }
+}
