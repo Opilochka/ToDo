@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../img/Logo.png" type="image/x-icon">
+    <title>ToDo</title>
+
+    <link rel="stylesheet" href="../styles/card.css">
+</head>
+
+<body>
+    <!-- Import jQuery, FontAwesome Icons and Open Sans Font -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    
+
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <!-- List wrapper -->
+    <div id="listWrapper">
+
+        <!-- List title -->
+        <div id="title">
+            <input id="titleInput" type="text" placeholder="My List" maxlength="21">
+        </div>
+
+        <div id="separator"></div>
+
+        <!-- To do items -->
+        <div id="itemsWrapper">
+            <div class="item">
+                <!-- New items are created here -->
+            </div>
+        </div>
+
+        <!-- Add a new item -->
+        <div id="addNewItemWrapper">
+            <input type="text" id="addNewItemInput" maxlength="30">
+            <button id="addNewItemBtn"></button>
+        </div>
+
+    </div>
+    <script src="../styles/card.js"></script>
+</body>
+
+</html>

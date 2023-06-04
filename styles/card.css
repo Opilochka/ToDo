@@ -1,0 +1,158 @@
+* {
+    box-sizing: border-box;
+    outline: none;
+  }
+  
+  /* Center the list */
+  body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    background-image: url(../img/Fon.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  #listWrapper {
+    background: #D5B2CA;
+    border-radius: 10px;
+    border: 0;
+  }
+
+.taskCompleted{
+    width: 16px;
+    height: 16px;
+    background-image: url(../img/check.png);
+    margin-right: 9px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+  /* List title */
+  #title {
+    position: relative;
+    display: flex;
+    align-items: center;
+
+  }
+  
+  #titleInput {
+    font-size: 24px;
+    font-weight: 800;
+    border-radius: 10px 10px 0 0;
+    color: #666f99;
+    padding: 12px 32px;
+    border: 0;
+    background: #F5EAFB;
+    
+  }
+  
+  #titleInput::placeholder {
+    color: #3f455f4d;
+  }
+  
+  
+  /* Separator */
+  #separator {
+    margin: 12px 0;
+    border-top: 0;
+    border-right: 0;
+    border-left: 0;
+    max-width: 100%;
+    height: 10px;
+  }
+  
+  /* To do items wrapper */
+  #itemsWrapper {
+    padding: 8px 8px;
+    margin: 12px 0;
+  }
+  
+  /* To do item */
+  .item {
+    width: 100%;
+    font-size: 18px;
+    border-radius: 12px;
+    border: 0;
+    padding: 9px 12px;
+    color: #3f455f;
+    position: relative;
+  }
+  
+  .itemInner {
+    padding: 9px 0;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    border: 0;
+    border-radius: 9px;
+    color: #666f99;
+    padding: 12px 60px 12px 18px;
+    background: #F5EAFB;
+    margin: 10px;
+  }
+  
+  .itemInner p {
+    margin: 0;
+    pointer-events: none;
+  }
+  
+  
+  .removeItemBtn {
+    position: absolute;
+    right: 30px;
+    background: #F5EAFB;
+    background-image: url(../img/DeletBtn.png);
+    border: 0;
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+  }
+  
+  
+  /* Add a new item section */
+  #addNewItemWrapper {
+    width: 90%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin: 5%;
+  }
+  
+  #addNewItemInput {
+    width: 100%;
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    border: 0;
+    border-radius: 9px;
+    color: #666f99;
+    padding: 12px 60px 12px 18px;
+    background: #F5EAFB;
+  }
+  
+  #addNewItemBtn {
+    position: absolute;
+    right: 0;
+    height: 16px;
+    width: 16px;
+    margin: 0 18px;
+    background: #F5EAFB;
+    background-image: url(../img/plusBtn.png);
+    border: 0;
+    color: #666f99;
+    cursor: pointer;
+    font-size: 18px;
+  }

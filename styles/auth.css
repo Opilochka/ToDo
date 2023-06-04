@@ -45,7 +45,7 @@ body{
 
     .signup {
         position: absolute;
-        top: 50%;
+        top: 45%;
         left: 50%;
         -webkit-transform: translate(-50%, -50%);
         width: 65%;
@@ -101,7 +101,7 @@ body{
                 line-height: 30px;
                 padding: 8px 15px;
                 border-bottom: 1px solid #eee;
-                width: 100%;
+                width: 90%;
                 font-size: 12px;
 
                 &:last-child {
@@ -121,7 +121,7 @@ body{
             border-radius: 15px;
             display: block;
             margin: 15px auto;
-            padding: 15px 45px;
+            padding: 15px 15px;
             width: 100%;
             font-size: 13px;
             font-weight: bold;
@@ -203,7 +203,7 @@ body{
                     line-height: 30px;
                     padding: 8px 15px;
                     border-bottom: 1px solid #eee;
-                    width: 100%;
+                    width: 90%;
                     font-size: 12px;
 
                     &:last-child {
@@ -223,7 +223,7 @@ body{
                 border-radius: 15px;
                 display: block;
                 margin: 15px auto;
-                padding: 15px 45px;
+                padding: 15px 15px;
                 width: 100%;
                 font-size: 13px;
                 font-weight: bold;
@@ -271,5 +271,12 @@ body{
             visibility: visible;
             -webkit-transition: all .3s ease;
         }
+    }
+}
+
+@media screen and (max-width: 510px) {
+    .form-structor {
+        height: 400px;
+        width: 250px;
     }
 }
