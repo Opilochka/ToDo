@@ -16,6 +16,15 @@ module.exports.login = async function(req, res){
                 email: candidate.email,
                 userId: candidate._id
             }, keys.jwt, {expiresIn: 60 * 60})
+
+            req.session.user = candidate
+            req.session.isAuthenticated = true
+            req.session.save(err => {
+                if (err) {
+                    throw err
+                }
+                res.redirect('/')
+            })
             
             res.status(200).json({
                 message: 'Всё хорошо'
@@ -37,7 +46,7 @@ module.exports.register = async function(req, res){
     const candidate = await User.findOne({email: req.body.email})
     if(candidate){
         //Пользователь существует, нужно отправить ошибку 
-        res.status(409).json({
+        return res.status(409).json({
             message: 'Такой email уже занят. Попробуйте другой.'
         })
     } else{
@@ -45,14 +54,14 @@ module.exports.register = async function(req, res){
         const salt = bcrypt.genSaltSync(10)
         const password = req.body.password
         const user = new User({
+            name: req.body.name,
             email: req.body.email,
             password: bcrypt.hashSync(password, salt)
         })
 
         try{
             await user.save()
-            res.redirect('/list_of_cases')
-            res.status(201).json(user)
+            res.redirect('/')
         } catch(e){
            //Обработать ошибку 
            errorHandler(res, e)

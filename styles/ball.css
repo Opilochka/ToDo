@@ -1,0 +1,35 @@
+.home__ball {
+    margin-top: 5%;
+    height: 200px;
+    width: 200px;
+
+    border-radius: 50%;
+    background: rgba(230, 175, 214, 0.2);;
+    animation: movingsphere 50s linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    position: absolute;
+    left: 70vw;
+    z-index: -1;
+}
+
+@keyframes movingsphere {
+    0% {
+        transform: translateY(0px);
+    }
+
+    100% {
+        transform: translateY(400px);
+    }
+}
+
+@media (max-width:500px) {
+    .home__ball {
+        position: absolute;
+        left: 60vw;
+        height: 150px;
+        width: 150px;
+
+        z-index: -1;
+    }
+}

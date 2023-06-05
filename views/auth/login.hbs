@@ -1,0 +1,33 @@
+<body class="body html">
+    <div class="form-structor">
+        <form action="/auth/register" method="POST">
+            <div class="signup">
+                <h2 class="form-title" id="signup">Регистрация</h2>
+                <div class="form-holder">
+                    <input id="name" name="name" type="text" class="input" placeholder="Имя" required />
+                    <input id="email" name="email" type="email" class="input" placeholder="Почта" required />
+                    <input id="password" name="password" type="password" class="input" placeholder="Пароль" required />
+                </div>
+                <button class="submit-btn">Зарегестрироваться</button>
+            </div>
+            {{# if message }}
+            <p class="alert alert-danger">{{ this.message }}</p>
+            {{/if}}
+        </form>
+        <form action="/auth/login" method="POST">
+            <div class="login slide-up">
+                <div class="center">
+                    <h2 class="form-title" id="login">Вход</h2>
+                    <div class="form-holder">
+                        <input id="email" name="email" type="email" class="input" placeholder="Почта" required />
+                        <input id="password" name="password" type="password" class="input" placeholder="Пароль"
+                            required />
+                    </div>
+                    <button class="submit-btn">Войти</button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <script src="/scripts/auth.js"></script>
+</body>

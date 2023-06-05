@@ -1,11 +1,15 @@
-{{> head }}
+{{> head}}
 
-<body class="body">
-    {{> navbar }}
+<body>
+    {{#if isLogin}}
+    {{{body}}}
+    {{else}}
+    {{> header__index}}
 
-    {{{ body }}}
+    {{{body}}}
 
-    {{> footer }}
+    {{> footer}}
+    {{/if}}
 </body>
 
 </html>
